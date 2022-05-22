@@ -1,7 +1,6 @@
-package ds.stacks;
+package dsa.stacks;
 import java.util.Arrays;
 import java.util.EmptyStackException;
-import java.util.Stack;
 
 public class StackImplementation {
 

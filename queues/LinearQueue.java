@@ -1,4 +1,4 @@
-package ds.queues;
+package dsa.queues;
 
 public class LinearQueue {
     int[] queue;

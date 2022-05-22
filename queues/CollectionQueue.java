@@ -1,5 +1,4 @@
-package ds.queues;
-import java.util.ArrayDeque;
+package dsa.queues;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.PriorityQueue;

@@ -1,5 +1,5 @@
 // Balancing parenthesis: Number of opening and closing brackets should be same.
-package ds.stacks;
+package dsa.stacks;
 import java.util.Stack;
 
 public class CheckBalancedBrackets {

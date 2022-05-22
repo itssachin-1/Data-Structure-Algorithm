@@ -1,4 +1,4 @@
-package ds.stacks;
+package dsa.stacks;
 import java.util.EmptyStackException;
 
 public class StaticArrayStack {

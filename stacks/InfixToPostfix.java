@@ -1,4 +1,4 @@
-package ds.stacks;
+package dsa.stacks;
 import java.util.Stack;
 public class InfixToPostfix {
     Stack<Character> st = new Stack<>();

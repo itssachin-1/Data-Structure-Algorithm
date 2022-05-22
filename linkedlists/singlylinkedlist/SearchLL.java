@@ -1,4 +1,4 @@
-package ds.linkedlists.singlylinkedlist;
+package dsa.linkedlists.singlylinkedlist;
 import java.util.LinkedList;
 public class SearchLL {
     LinkedList<Integer> ll= new LinkedList<>();

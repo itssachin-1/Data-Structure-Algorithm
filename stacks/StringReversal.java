@@ -1,4 +1,4 @@
-package ds.stacks;
+package dsa.stacks;
 
 public class StringReversal {
     public static StringBuffer reverse(StringBuffer str) {

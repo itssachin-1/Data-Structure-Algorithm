@@ -1,4 +1,4 @@
-package ds.trees;
+package dsa.trees;
 
 public class ArrayBinaryTree {
     int root;

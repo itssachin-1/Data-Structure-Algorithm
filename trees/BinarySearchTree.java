@@ -1,4 +1,7 @@
-package ds.trees;
+package dsa.trees;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Random;
 
 public class BinarySearchTree {
     Node root;
@@ -116,10 +119,32 @@ public class BinarySearchTree {
         System.out.println();
     }
 
-    void levelorder(Node root){
-        if (root != null)
+    void levelOrder(){
+        levelOrder(root);
+    }
+    void levelOrder(Node root){
+        if (root == null)
             return;
-//        Queue<Node> q =  new Queue<>();
+        final Queue<Node> q= new LinkedList<>();
+        // adding the node
+        q.add(root);
+        System.out.println("Level order: ");
+        while (!q.isEmpty()) {
+            final int size= q.size();
+            for (int i = 0; i < size; i++) {
+                // removing the front node from the queue
+                Node current = q.remove();
+                // print the value of the removed node
+                System.out.print(current.data+" ");
+                // if the left child is present, enqueue the left child
+                if (current.left != null)
+                    q.add(current.left);
+                // if the right child is present, enqueue the right child too
+                if (current.right != null)
+                    q.add(current.right);
+            }
+            System.out.println();
+        }
     }
 
 //    int search(){
@@ -209,17 +234,24 @@ public class BinarySearchTree {
 //        bt.root.right=new Node(14);
 //        bt.root.left.left=new Node(6);
 //        bt.root.right.right=new Node(7);
-        bst.insert(11);
-        bst.insert(4);
-        bst.insert(3);
-        bst.insert(5);
-        bst.insert(6);
-        bst.insert(7);
-        bst.insert(10);  // bst can have duplicates
+//        bst.insert(11);
+//        bst.insert(4);
+//        bst.insert(3);
+//        bst.insert(5);
+//        bst.insert(6);
+//        bst.insert(7);
+//        bst.insert(10);  // bst can have duplicates
+
+//        int randomNumber = (int)(Math.random()*100);    // this generates 1 random no. everytime so not suitable to use here
+        Random rNum = new Random();
+        for (int i = 0; i < 10; i++) {
+            bst.insert(rNum.nextInt(100));
+        }
 
         bst.preorder();
         bst.inorder();
         bst.postorder();
+        bst.levelOrder();
 
 //        bst.add(10);
         bst.inorder();

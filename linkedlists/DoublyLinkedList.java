@@ -1,4 +1,4 @@
-package ds.linkedlists;
+package dsa.linkedlists;
 
 public class DoublyLinkedList {
     Node head;

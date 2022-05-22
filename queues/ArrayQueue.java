@@ -1,4 +1,4 @@
-package ds.queues;
+package dsa.queues;
 
 public class ArrayQueue {
     private Object[] data;
