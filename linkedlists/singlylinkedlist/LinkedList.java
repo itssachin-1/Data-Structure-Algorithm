@@ -248,9 +248,9 @@ public int data;
 
     public static void main(String[] args) {
         LinkedList ll = new LinkedList();
-        ll.head= new Node(5);       // creating head node
-        Node second = new Node(7);  // creating second node
-        ll.head.next= second;             // pointing second to head
+        ll.head= new Node(5);            // creating head node
+        Node second = new Node(7);      // creating second node
+        ll.head.next= second;                 // pointing second to head
         Node third = new Node(8);
         second.next= third;
         ll.printLL();
