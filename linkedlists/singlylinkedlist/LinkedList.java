@@ -78,7 +78,26 @@ public int data;
         System.out.println("1st node removed!");
         return data;
     }
+    int removeLast(){
+        if (head== null) {
+            System.out.println("The list is already empty!");
+            return -1;
+        }
+        if (head.next ==null){
+            System.out.println(head.data+" is deleted!");
+            return head.data;
+        }
+        Node curr= head;
+        int d= curr.data;
+        while (curr.next.next != null){
+            curr = curr.next;
+        }
+//        System.out.println(curr.data);
+        curr.next = null;
 
+        System.out.println("Last node is deleted!");
+        return d;
+    }
     void remove(int key){
         Node current = head, prev = null;                   // creating current and previous node references
         if (current != null && current.data == key) {       // if first(current) node isn't null and this is the node to delete
